@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+void rec(int a,int b){
+    if (a == b)
+        return;
+        if (a % 2 == 0){
+            cout <<  a <<"\t";
+        }
+    rec(a+1,b);
+}
+int main() {
+    rec(1,10);
+    return 0;
+}
